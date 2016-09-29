@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en-us" class="no-js">
+
+	<head>
+		<meta charset="utf-8">
+        <title>LEGEND</title>
+        <meta name="description" content="The description should optimally be between 150-160 characters.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Madeon08">
+
+        <!-- ================= Favicon ================== -->
+        <!-- Standard -->
+        <link rel="shortcut icon" href="img/favicon.png">
+        <!-- Retina iPad Touch Icon-->
+        <link rel="apple-touch-icon" sizes="144x144" href="img/favicon-retina-ipad.png">
+        <!-- Retina iPhone Touch Icon-->
+        <link rel="apple-touch-icon" sizes="114x114" href="img/favicon-retina-iphone.png">
+        <!-- Standard iPad Touch Icon-->
+        <link rel="apple-touch-icon" sizes="72x72" href="img/favicon-standard-ipad.png">
+        <!-- Standard iPhone Touch Icon-->
+        <link rel="apple-touch-icon" sizes="57x57" href="img/favicon-standard-iphone.png">
+
+        <!-- ============== Resources style ============== -->
+        <link rel="stylesheet" href="css/style.css" />
+
+		<!-- Modernizr runs quickly on page load to detect features -->
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+
+	<body>
+
+		<!-- Page preloader -->
+		<div id="loading">
+			<div id="preloader">
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+
+		<!-- Overlay -->
+		<div class="global-overlay">
+			<div class="overlay">
+
+				<!-- Lines Overlay -->
+				<div class="overlay-dash"></div>
+
+				<!-- Cloud animation -->
+				<div id="cloud-animation">
+
+			        <img src="img/cloud-01.png" alt="" id="cloud1">
+			        <img src="img/cloud-02.png" alt="" id="cloud2">
+			        <img src="img/cloud-03.png" alt="" id="cloud3">
+			        <img src="img/cloud-04.png" alt="" id="cloud4">
+
+			    </div>
+
+			</div>
+		</div>
+
+		<!-- START - Home Part -->
+		<section id="home-wrap">
+
+			<!-- Stars Overlay - Uncomment the next 3 lines to activate the effect-->
+			<!-- <div id='stars'></div>
+			<div id='stars2'></div>
+			<div id='stars3'></div> -->
+
+			<div class="content">
+
+				<!-- Your logo -->
+				<!-- <img src="img/logo.png" alt="" class="brand-logo text-intro opacity-0" /> -->
+
+				<h1 class="text-intro opacity-0"><span class="polyfy-title">Fairhope Works!</span></h1>
+
+				<p class="text-intro opacity-0">Co-Working space located in the heart of Fairhope, AL<br>
+					Launching Fall 2016.</p>
+
+				<!-- <a href="#" id="open-more-info" data-target="info-wrap" class="light-btn text-intro opacity-0">More Information</a> -->
+
+				<a data-dialog="somedialog" class="action-btn trigger text-intro opacity-0">Notify Me!</a>
+
+			</div> <!-- /. content -->
+
+			<!-- Social icons -->
+			<div class="social-icons text-intro opacity-0">
+
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-google-plus"></i></a>
+				<a href="#"><i class="fa fa-linkedin"></i></a>
+
+			</div> <!-- /. social-icons -->
+
+		</section>
+		<!-- END - Home Part -->
+
+		<!-- START - Newsletter Popup -->
+		<div id="somedialog" class="dialog">
+
+			<div class="dialog__overlay"></div>
+
+			<div class="dialog__content">
+
+				<div class="dialog-inner">
+
+					<h4>Join Fairhope Works right now!</h4>
+
+					<p>Being the first to know always feels great... Signing up to our newsletter gives you <strong>exclusive access to our Grand Opening!</strong></p>
+
+					<!-- Newsletter Form -->
+					<div id="subscribe">
+
+		                <form action="php/notify-me.php" id="notifyMe" method="POST">
+
+		                    <div class="form-group">
+
+		                        <div class="controls">
+
+		                        	<!-- Field  -->
+		                        	<input type="text" id="mail-sub" name="email" placeholder="Click here to write your email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Click here to write your email'" class="form-control email srequiredField" />
+
+		                        	<!-- Spinner top left during the submission -->
+		                        	<i class="fa fa-spinner opacity-0"></i>
+
+		                            <!-- Button -->
+		                            <button class="btn btn-lg submit">Get notified</button>
+
+		                            <div class="clear"></div>
+
+		                        </div>
+
+		                    </div>
+
+		                </form>
+
+						<!-- Answer for the newsletter form is displayed in the next div, do not remove it. -->
+						<div class="block-message">
+
+							<div class="message">
+
+								<p class="notify-valid"></p>
+
+							</div>
+
+						</div>
+
+        			</div>
+        			<!-- /. Newsletter Form -->
+
+				</div>
+				<!-- /. dialog-inner -->
+
+				<!-- Button Cross to close the Newsletter Popup -->
+				<button class="close-newsletter" data-dialog-close><i class="icon ion-close-round"></i></button>
+
+			</div>
+			<!-- /. dialog__content -->
+
+		</div>
+		<!-- END - Newsletter Popup -->
+
+	<!-- ///////////////////\\\\\\\\\\\\\\\\\\\ -->
+    <!-- ********** Resources jQuery ********** -->
+    <!-- \\\\\\\\\\\\\\\\\\\/////////////////// -->
+
+	<!-- * Libraries jQuery, Easing and Bootstrap - Be careful to not remove them * -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.easings.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- Accelerated JavaScript animation JS file -->
+	<script src="js/velocity.min.js"></script>
+
+	<!-- Accelerated JavaScript animation UI JS file -->
+	<script src="js/velocity.ui.min.js"></script>
+
+	<!-- Newsletter plugin -->
+	<script src="js/notifyMe.js"></script>
+
+	<!-- Contact form plugin -->
+	<script src="js/contact-me.js"></script>
+
+	<!-- Slideshow/Image plugin -->
+	<script src="js/vegas-clouds.js"></script>
+
+	<!-- Scroll plugin -->
+	<script src="js/jquery.mousewheel.js"></script>
+
+	<!-- Custom Scrollbar plugin -->
+	<script src="js/jquery.mCustomScrollbar.js"></script>
+
+	<!-- Popup Newsletter Form -->
+	<script src="js/classie.js"></script>
+	<script src="js/dialogFx.js"></script>
+
+	<!-- PhotoSwipe Core JS file -->
+	<script src="js/photoswipe.js"></script>
+
+	<!-- PhotoSwipe UI JS file -->
+	<script src="js/photoswipe-ui-default.js"></script>
+
+	<!-- Main JS File -->
+	<script src="js/main.js"></script>
+
+	<!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
+
+	</body>
+
+</html>
